@@ -10,34 +10,26 @@ DataDrivenTestAutomationFramework is a robust test automation framework designed
 - Configurable Properties: Easy configuration through `config.properties` file.
 
 ## Project Structure
-DataDrivenTestAutomationFramework/
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/
-│   │           └── datadriven/
-│   │               ├── base/
-│   │               │   └── BaseClass.java
-│   │               ├── pages/
-│   │               │   ├── LoginPage.java
-│   │               │   └── RegisterPage.java
-│   │               └── utility/
-│   │                   ├── GenerateUniqueData.java
-│   │                   └── ExcelUtility.java
-│   └── test/
-│       └── java/
-│           └── com/
-│               └── datadriven/
-│                   └── test/
-│                       ├── LoginUserTestCase.java
-│                       └── RegisterUserTestCase.java
-└── src/
-    └── test/
-        └── resources/
-            ├── Configuration/
-            │   └── config.properties
-            └── TestData/
-                └── ApplicationTestData.xlsx
+- **`src/main/java/com/datadriven`**: Contains the main source code.
+  - **`base`**: Contains base classes for the framework.
+    - `BaseClass.java`: The base class for common functionalities.
+  - **`pages`**: Contains page object classes.
+    - `LoginPage.java`: Page object for the login page.
+    - `RegisterPage.java`: Page object for the registration page.
+  - **`utility`**: Contains utility classes.
+    - `GenerateUniqueData.java`: Utility for generating unique data.
+    - `ExcelUtility.java`: Utility for handling Excel files.
+
+- **`src/test/java/com/datadriven/test`**: Contains test cases.
+  - `LoginUserTestCase.java`: Test case for login functionality.
+  - `RegisterUserTestCase.java`: Test case for registration functionality.
+
+- **`src/test/resources`**: Contains resources for testing.
+  - **`Configuration`**: Contains configuration files.
+    - `config.properties`: Configuration properties for the tests.
+  - **`TestData`**: Contains test data files.
+    - `ApplicationTestData.xlsx`: Excel file with application test data.
+
 
 ## Getting Started
 
